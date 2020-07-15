@@ -18,7 +18,7 @@ from django.urls import path
 
 from django.contrib import admin
 from django.urls import path, include
-from .views import BookmarkListView
+from bookmark.views import BookmarkListView
 
 urlpatterns = [
     path('', BookmarkListView.as_view(), name = 'list'),
